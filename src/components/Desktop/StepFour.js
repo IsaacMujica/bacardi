@@ -52,12 +52,12 @@ const arr = {
 			'2022-08-15',
 			'2022-08-21'
 		]}, 
-	34: {option: [5],
+	34: {option: [1,7],
 		date: [
 			'2022-08-22',
 			'2022-08-28'
 		]}, 
-	35: {option: [7],
+	35: {option: [3],
 		date: [
 			'2022-08-29',
 			'2022-08-31'
@@ -105,7 +105,7 @@ export default function StepFour({ setStep }) {
 			const posibleResults = [0,2,4,6]
 			//console.info(__options)
 			posibleResults.push(...__options);
-			//console.info(posibleResults)
+			console.info(posibleResults)
 			const newPrizeNumber = posibleResults[Math.floor(Math.random() * posibleResults.length)]
 			setPrizeNumber(newPrizeNumber)
 			setMustSpin(true)
